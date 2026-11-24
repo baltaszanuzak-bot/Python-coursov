@@ -1,0 +1,32 @@
+Import pandas as pd import natplotlib.pyplot as pit fron IPython.display Import display
+Import ipywidgets as widgets
+documents - ()
+name - widgets. Text( description="Кухат:",
+placeholder= "Кухат атаун енгізіні»"
+田
+kind = wldgets.Dropdown(
+options-["Mord", "Excel", "PDF", "PoserPodnt"I.
+description«"формат:"
+button = widgets.Button (
+description» "Кухат косу",
+button_style-"success"
+output - widgets.Output()
+def add_document (b):
+if name.value.strip(): documents-append(C
+"Arayu": name. value,
+"форматы" : kind.value
+name.value - **
+adth output:
+output.clear_output()
+df - pd.DataFrase(documents)
+display(df)
+df["бормати"].value_counts() -plot(
+kind-"bar", figsize-(7, 4)
+TI
+plt. title(*Кухаттар статистикасы")
+pit.xlabel ("бормат")
+plt.ylabel("Саны")
+plt.xticks(rotation=9)
+plt. shout)
+button.on_cl1ck(add_document)
+display(name, kind, button, output)
