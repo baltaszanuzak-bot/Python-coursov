@@ -1,0 +1,31 @@
+Import matplotlib.pyplot as pit
+fig, ax - plt.subplots(flgsize-(12, B))
+center = (0.5, 0.5)
+branches - [
+(0.2,
+0.B,
+"Google DrIve"),
+(0.8, 0.8,
+"OneDrive"),
+(0.15,
+0.2, "Google Docs"),
+(0.85, B.2, "Google Sheets"),
+,0.5)
+0.9, "Булуты сактау"),
+(o.5,
+0.1,
+"Кухат алмасу")
+]
+田
+ax. scatter (*center, 1-3500, color-"skyblue")
+ax.text(*center, "БУЛТТЫ\пТЕХНОЛОГИЯ", ha="center",
+va-"center", fontsize-12, weight-"bold*)
+for x, y, label in branches:
+ax.plot ([center[0], x], [center[1], y1
+11newidth-2)
+ax.scatter(x, y, 5=17e0, color-"]1ghtgreen")
+ax. text(x, y, label, ha-"center", va-"center", fontsize=10)
+ax.set_title("Бултты технологиялардын интеллект-картасы",
+fontsize=15)
+ax.axis("off")
+plt. show()
