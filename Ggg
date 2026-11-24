@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+files_name = [
+"Word"
+. "Excel", "PDF",
+"PowerPoint", "Сурет". "Видео"
+sizes = [2, 1, 4, 6, 8, 20]
+plt. figure(figsize=(10, 5))
+plt. plot(
+files_name, sizes, marker-"o", Iinewidth=3,
+markersize-g
+plt. fill_ between(files_name, sizes, alpha=0.2)
+plt.title ("Кужаттардын сактау келемі")
+plt. xlabel("Файл турлері")
+plt.ylabel ("Келемі (МБ)*)
+plt. grid(True)
