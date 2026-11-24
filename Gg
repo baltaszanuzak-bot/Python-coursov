@@ -1,0 +1,20 @@
+Ipip install reportlab
+from reportlab.pdfgen import canvas
+From reportlab.pdfbase import pdfmetrics from reportlab.pdfbase.ttfonts import TTFont from google.colab import files
+Iwget -q-0 arial.ttf https://github.com/matomo-ong/travis-scripts/raw/master/fonts/Arial.ttf
+pdfmetrics. registerFont(TTFont("Arial", "arial.ttf"))
+c = canvas. Canvas ("cloud_report.pdf")
+c. setFont ("Arial", 20)
+c. drawString(80, 780, "BULTTY TECHNOLOGIYALAR")
+c. setFont ("Arial", 13)
+c.drawString (80, 730,
+"PDF электронды есебі")
+c. drawString(80, 690,
+"Такырыбы: Бултты кужаттар")
+c. drawString (80, 650,
+"Google Colab ортасы")
+c. drawString(80, 610,
+"Орындаган: Студент")
+c. save
+ ("PDF кужат дайын!")
+files.download("cloud_report.pdf")
